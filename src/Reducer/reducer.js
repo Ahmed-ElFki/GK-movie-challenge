@@ -101,10 +101,11 @@ function reducer(state = initialState, action) {
       return {
         movies: [
           ...state.movies.map((movie) =>
-            movie.id === action.payload.id ? action.payload : movie
+            movie._id === state.updateMovieID ? action.payload : movie
           ),
         ],
         updateMovieToggle: false,
+        updateMovieID: 0,
       };
     case UPDATE_TOGGLE_STATE:
       return {

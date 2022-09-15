@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 import { UPDATE_TOGGLE_STATE } from "../Constants/constants";
-import EditMovie from "./EditMovie";
 
 function MovieCard({ id, title, rate, date, imgUrl, description, category }) {
   const dispatch = useDispatch();
